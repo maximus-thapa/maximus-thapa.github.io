@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://maximus-thapa.github.io/blog/2024/07/03/react-state-updates-explained/">
+        <link rel="canonical" href="https://maximus-thapa.github.io/blog/2024/07/04/why-props-are-objects-in-react/">
       
       
-        <link rel="prev" href="../../02/the-functional-update-pattern-explained/">
+        <link rel="prev" href="../../03/react-state-updates-explained/">
       
-      
-        <link rel="next" href="../../04/why-props-are-objects-in-react/">
       
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>React State Updates Explained - Maximus Thapa</title>
+        <title>Why Props are Objects in React - Maximus Thapa</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#react-state-updates-explained" class="md-skip">
+        <a href="#why-props-are-objects-in-react" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              React State Updates Explained
+              Why Props are Objects in React
             
           </span>
         </div>
@@ -713,27 +711,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#example-understanding-asynchronous-state-updates" class="md-nav__link">
+  <a href="#1-simplicity-of-data-transfer" class="md-nav__link">
     <span class="md-ellipsis">
-      Example: Understanding Asynchronous State Updates
+      1. Simplicity of Data Transfer
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fixing-it-with-functional-updates" class="md-nav__link">
+  <a href="#2-flexibility-in-data-types" class="md-nav__link">
     <span class="md-ellipsis">
-      Fixing It with Functional Updates
+      2. Flexibility in Data Types
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#summary-of-asynchronous-updates" class="md-nav__link">
+  <a href="#3-destructuring-for-cleaner-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary of Asynchronous Updates
+      3. Destructuring for Cleaner Code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-easier-component-reusability" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Easier Component Reusability
     </span>
   </a>
   
@@ -785,7 +792,7 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2024-07-03 00:00:00" class="md-ellipsis">July 3, 2024</time>
+                        <time datetime="2024-07-04 00:00:00" class="md-ellipsis">July 4, 2024</time>
                       </div>
                     </li>
                     
@@ -830,115 +837,40 @@
 
 
 
-<h1 id="react-state-updates-explained">React State Updates Explained</h1>
-<p>Certainly! Let’s explore the concept of asynchronous state updates in React with a detailed example.</p>
+<h1 id="why-props-are-objects-in-react">Why Props are Objects in React</h1>
+<p>In React, props (short for "properties") are a fundamental concept that enables components to communicate and share data. One of the key reasons props are implemented as objects is to streamline data handling and enhance component reusability. </p>
 <!-- more -->
 
 <hr />
-<div class="admonition question">
-<p class="admonition-title">React State Updates Explained: The Importance of Asynchronous Behavior</p>
-</div>
-<h2 id="example-understanding-asynchronous-state-updates">Example: Understanding Asynchronous State Updates</h2>
-<p>Suppose we have a simple counter component that increments the count when a button is clicked.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Initial Component Without Functional Updates</label><label for="__tabbed_1_2">What Happens Here?</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">Counter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">count</span><span class="p">,</span><span class="w"> </span><span class="nx">setCount</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">handleIncrement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">        </span><span class="nx">setCount</span><span class="p">(</span><span class="nx">count</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// Attempt to increment the count</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="nx">setCount</span><span class="p">(</span><span class="nx">count</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span><span class="w"> </span><span class="c1">// Attempt to increment the count again</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="p">};</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">            </span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">Count</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">count</span><span class="p">}&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">            </span><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleIncrement</span><span class="p">}&gt;</span><span class="nx">Increment</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">        </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="p">);</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="p">};</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">Counter</span><span class="p">;</span>
+<p>Here’s a closer look at why this design choice is beneficial.</p>
+<h2 id="1-simplicity-of-data-transfer">1. Simplicity of Data Transfer</h2>
+<p>By using an object to bundle props, React simplifies the process of passing multiple values to a component. Instead of needing to pass individual parameters, developers can group related data together in a single object. For example:</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">MyComponent</span><span class="w"> </span><span class="na">name</span><span class="o">=</span><span class="s">&quot;Alice&quot;</span><span class="w"> </span><span class="na">age</span><span class="o">=</span><span class="p">{</span><span class="mf">25</span><span class="p">}</span><span class="w"> </span><span class="p">/&gt;</span>
 </span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<ol>
-<li>
-<p><strong>Clicking the Button</strong>:</p>
-<ul>
-<li>When you click the "Increment" button, the <code>handleIncrement</code> function is called.</li>
-<li>The first <code>setCount(count + 1)</code> is executed, but it doesn't update the state immediately.</li>
-<li>The second <code>setCount(count + 2)</code> is called right after, referencing the same initial <code>count</code> value.</li>
-</ul>
-</li>
-<li>
-<p><strong>Result</strong>:</p>
-<ul>
-<li>If <code>count</code> was initially 0, both updates reference the same value, and you may expect the count to be 3 (0 + 1 + 2). However, because the updates are batched, the final state remains 2 (0 + 2) instead of 3.</li>
-</ul>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<hr />
-<h2 id="fixing-it-with-functional-updates">Fixing It with Functional Updates</h2>
-<p>To correctly manage the updates, we can use the functional update pattern:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Example</label><label for="__tabbed_2_2">What Happens Now?</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">Counter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">count</span><span class="p">,</span><span class="w"> </span><span class="nx">setCount</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">handleIncrement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="nx">setCount</span><span class="p">((</span><span class="nx">prevCount</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">prevCount</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// Correctly increments by 1</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="nx">setCount</span><span class="p">((</span><span class="nx">prevCount</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">prevCount</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span><span class="w"> </span><span class="c1">// Correctly increments by 2</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="p">};</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">            </span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">Count</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">count</span><span class="p">}&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">            </span><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleIncrement</span><span class="p">}&gt;</span><span class="nx">Increment</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">        </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">    </span><span class="p">);</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="p">};</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">Counter</span><span class="p">;</span>
+<p>This translates into a single props object:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">25</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span>
 </span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<ol>
-<li>
-<p><strong>Clicking the Button</strong>:</p>
-<ul>
-<li>The first <code>setCount</code> now uses the previous state <code>prevCount</code> to increment the count by 1.</li>
-<li>The second <code>setCount</code> also uses the latest <code>prevCount</code>, which is now updated.</li>
-</ul>
-</li>
-<li>
-<p><strong>Result</strong>:</p>
-<ul>
-<li>If <code>count</code> was initially 0, the first update correctly sets it to 1, and the second update then sets it to 3 (1 + 2). This yields the expected behavior.</li>
-</ul>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<hr />
-<h2 id="summary-of-asynchronous-updates">Summary of Asynchronous Updates</h2>
-<ul>
-<li><strong>Batched Updates</strong>: In the initial example, React batched the updates. The state didn’t update immediately after each call, which led to unexpected results.</li>
-<li><strong>Using Previous State</strong>: By using the functional update pattern, you ensure each update correctly references the most recent state value.</li>
-<li><strong>Performance and Consistency</strong>: This pattern prevents potential issues and allows React to optimize rendering, providing a smoother user experience.</li>
-</ul>
+<h2 id="2-flexibility-in-data-types">2. Flexibility in Data Types</h2>
+<p>Props as objects allow for various data types to be passed seamlessly. A single props object can contain strings, numbers, arrays, functions, or even other objects. This flexibility makes it easy to manage complex data structures without changing the fundamental way props are passed:</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">MyComponent</span><span class="w"> </span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="na">user</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Alice&quot;</span><span class="w"> </span><span class="p">}}</span><span class="w"> </span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="na">items</span><span class="o">=</span><span class="p">{[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">]}</span><span class="w"> </span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="na">onClick</span><span class="o">=</span><span class="p">{()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Clicked!&quot;</span><span class="p">)}</span><span class="w"> </span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">/&gt;</span>
+</span></code></pre></div>
+<h2 id="3-destructuring-for-cleaner-code">3. Destructuring for Cleaner Code</h2>
+<p>Using an object allows developers to take advantage of JavaScript destructuring, resulting in cleaner and more readable code. Instead of accessing props with <code>props.name</code>, you can destructure directly in the function signature:</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">MyComponent</span><span class="p">({</span><span class="w"> </span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;{</span><span class="nx">name</span><span class="p">}</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="p">{</span><span class="nx">age</span><span class="p">}</span><span class="w"> </span><span class="nx">years</span><span class="w"> </span><span class="nx">old</span><span class="p">.&lt;/</span><span class="nt">div</span><span class="p">&gt;;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="4-easier-component-reusability">4. Easier Component Reusability</h2>
+<p>Since props are objects, you can easily create reusable components by passing different props without altering the component's core functionality. This leads to a more modular design, making your codebase easier to maintain and extend.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>Understanding how asynchronous state updates work in React helps developers avoid common pitfalls and write more reliable code. Using functional updates ensures that state changes are predictable and accurate, especially in scenarios with multiple rapid updates.</p>
+<p>Props being objects in React is a deliberate design choice that enhances simplicity, flexibility, and reusability. By allowing multiple data types to be bundled into a single structure, React makes it easier for developers to create dynamic, interactive user interfaces while keeping their code organized and manageable. Understanding this foundational concept is crucial for building efficient React applications.</p>
 
 
 
