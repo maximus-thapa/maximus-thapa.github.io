@@ -8,19 +8,25 @@
       
       
       
+        <link rel="canonical" href="https://maximus-thapa.github.io/blog/2024/07/11/transitioning-from-switch-to-routes/">
       
       
+        <link rel="prev" href="../../10/deciding-where-to-define-your-variables-in-react/">
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      
+        <link rel="next" href="../../12/conditionally-rendering-navbar-in-react/">
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
     
     
       
-        <title>Maximus Thapa</title>
+        <title>Transitioning from Switch to Routes - Maximus Thapa</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.35f28582.min.css">
       
       
 
@@ -39,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -57,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#transitioning-from-switch-to-routes" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -67,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Maximus Thapa" class="md-header__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
+    <a href="../../../../.." title="Maximus Thapa" class="md-header__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -87,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Transitioning from Switch to Routes
             
           </span>
         </div>
@@ -156,7 +167,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="../../../../.." class="md-tabs__link">
         
   
     
@@ -171,11 +182,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/blog/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../" class="md-tabs__link">
           
   
   Blog
@@ -193,7 +206,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/nepali/intro/" class="md-tabs__link">
+        <a href="../../../../../nepali/intro/" class="md-tabs__link">
           
   
   Nepali
@@ -211,7 +224,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/reactPattern/functional-updated-pattern/" class="md-tabs__link">
+        <a href="../../../../../reactPattern/functional-updated-pattern/" class="md-tabs__link">
           
   
   React Pattern
@@ -229,7 +242,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/auth/intro/" class="md-tabs__link">
+        <a href="../../../../../auth/intro/" class="md-tabs__link">
           
   
   Auth
@@ -251,7 +264,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -262,7 +277,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Maximus Thapa" class="md-nav__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
+    <a href="../../../../.." title="Maximus Thapa" class="md-nav__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -280,7 +295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -297,23 +312,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -324,7 +344,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -335,12 +355,14 @@
                 
   
   
+    
+  
   
     
   
   
-    <li class="md-nav__item">
-      <a href="/blog/" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -401,7 +423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/archive/2024/" class="md-nav__link">
+      <a href="../../../../archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -475,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/nepali/intro/" class="md-nav__link">
+      <a href="../../../../../nepali/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -534,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/nepali/js/callbackfunction/" class="md-nav__link">
+      <a href="../../../../../nepali/js/callbackfunction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -601,7 +623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/nepali/react/context/" class="md-nav__link">
+      <a href="../../../../../nepali/react/context/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -675,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reactPattern/functional-updated-pattern/" class="md-nav__link">
+      <a href="../../../../../reactPattern/functional-updated-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -696,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reactPattern/when-not-to-use-functional-update/" class="md-nav__link">
+      <a href="../../../../../reactPattern/when-not-to-use-functional-update/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -717,7 +739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reactPattern/functional-pattern-and-technique/" class="md-nav__link">
+      <a href="../../../../../reactPattern/functional-pattern-and-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -783,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/intro/" class="md-nav__link">
+      <a href="../../../../../auth/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -842,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/router-version/" class="md-nav__link">
+      <a href="../../../../../auth/router/router-version/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -863,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/react-router/" class="md-nav__link">
+      <a href="../../../../../auth/router/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -884,7 +906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/why-react-router/" class="md-nav__link">
+      <a href="../../../../../auth/router/why-react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -905,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/not-found-component/" class="md-nav__link">
+      <a href="../../../../../auth/router/not-found-component/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -926,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/routing/" class="md-nav__link">
+      <a href="../../../../../auth/router/routing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -947,7 +969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/best-method-for-auth/" class="md-nav__link">
+      <a href="../../../../../auth/router/best-method-for-auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -968,7 +990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/auth-techniques/" class="md-nav__link">
+      <a href="../../../../../auth/router/auth-techniques/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1035,7 +1057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/example/simple-login/" class="md-nav__link">
+      <a href="../../../../../auth/example/simple-login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1056,7 +1078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/example/context-auth/" class="md-nav__link">
+      <a href="../../../../../auth/example/context-auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1093,6 +1115,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1102,6 +1126,70 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-component-replacement" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Component Replacement
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-route-matching" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Route Matching
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-route-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Route Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-element-prop" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Element Prop
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-nested-routes" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Nested Routes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1110,14 +1198,147 @@
             
           
           
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-  <h1>404 - Not found</h1>
-
-              </article>
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
             </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2024-07-11 00:00:00" class="md-ellipsis">July 11, 2024</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              2 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
           
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+  
+
+<nav class="md-tags" >
+  
+    
+    
+    
+      <span class="md-tag">react</span>
+    
+  
+</nav>
+
+
+
+<h1 id="transitioning-from-switch-to-routes">Transitioning from Switch to Routes</h1>
+<p>The differences between <code>Switch</code> and <code>Routes</code> in React Router are primarily about functionality, behavior, and syntax in React Router v6 compared to v5.</p>
+<!-- more -->
+
+<hr />
+<div class="admonition question">
+<p class="admonition-title">Understanding React Router v6: Transitioning from Switch to Routes</p>
+</div>
+<p>Here are the key distinctions:</p>
+<h2 id="1-component-replacement">1. Component Replacement</h2>
+<ul>
+<li><strong><code>Switch</code> (v5)</strong>: The <code>Switch</code> component renders the first matching <code>Route</code> it finds among its children. It essentially works as a container for <code>Route</code> components.</li>
+<li><strong><code>Routes</code> (v6)</strong>: <code>Routes</code> also renders the first matching <code>Route</code>, <mark>but</mark> it introduces a more streamlined syntax and improved matching capabilities.</li>
+</ul>
+<h2 id="2-route-matching">2. Route Matching</h2>
+<ul>
+<li><strong><code>Switch</code></strong>: Uses a <mark>"greedy" matching algorithm</mark>, meaning it matches the first <code>Route</code> that fits, even if other more specific routes exist below it. This could lead to unexpected matches if not carefully ordered.</li>
+<li><strong><code>Routes</code></strong>: Uses a more predictable <mark>"hierarchical" matching algorithm</mark>. It matches routes in a more controlled manner, ensuring that it considers the most specific routes first.</li>
+</ul>
+<h2 id="3-route-definition">3. Route Definition</h2>
+<ul>
+<li><strong><code>Switch</code> (v5)</strong>:</li>
+</ul>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">Switch</span><span class="p">&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p">&lt;</span><span class="nt">Route</span><span class="w"> </span><span class="na">path</span><span class="o">=</span><span class="s">&quot;/about&quot;</span><span class="w"> </span><span class="na">component</span><span class="o">=</span><span class="p">{</span><span class="nx">About</span><span class="p">}</span><span class="w"> </span><span class="p">/&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="p">&lt;</span><span class="nt">Route</span><span class="w"> </span><span class="na">path</span><span class="o">=</span><span class="s">&quot;/&quot;</span><span class="w"> </span><span class="na">component</span><span class="o">=</span><span class="p">{</span><span class="nx">Home</span><span class="p">}</span><span class="w"> </span><span class="p">/&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">&lt;/</span><span class="nt">Switch</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<ul>
+<li><strong><code>Routes</code> (v6)</strong>:</li>
+</ul>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">Routes</span><span class="p">&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="p">&lt;</span><span class="nt">Route</span><span class="w"> </span><span class="na">path</span><span class="o">=</span><span class="s">&quot;/about&quot;</span><span class="w"> </span><span class="na">element</span><span class="o">=</span><span class="p">{&lt;</span><span class="nt">About</span><span class="w"> </span><span class="p">/&gt;}</span><span class="w"> </span><span class="p">/&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="p">&lt;</span><span class="nt">Route</span><span class="w"> </span><span class="na">path</span><span class="o">=</span><span class="s">&quot;/&quot;</span><span class="w"> </span><span class="na">element</span><span class="o">=</span><span class="p">{&lt;</span><span class="nt">Home</span><span class="w"> </span><span class="p">/&gt;}</span><span class="w"> </span><span class="p">/&gt;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">&lt;/</span><span class="nt">Routes</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<h2 id="4-element-prop">4. Element Prop</h2>
+<ul>
+<li><strong><code>Switch</code></strong>: Uses the <code>component</code> prop to specify the component to render.</li>
+<li><strong><code>Routes</code></strong>: Uses the <code>element</code> prop, which requires the component to be passed as JSX. This change enhances the component rendering process, allowing for better handling of nested routes and more complex routing scenarios.</li>
+</ul>
+<h2 id="5-nested-routes">5. Nested Routes</h2>
+<ul>
+<li><strong><code>Routes</code> (v6)</strong>: Supports nested routes more intuitively and simplifies how nested routes are defined, making it easier to manage complex route structures.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>In summary, while both <code>Switch</code> and <code>Routes</code> serve to manage route rendering, <code>Routes</code> in v6 offers improved performance, a more intuitive API, and better handling of route matching and nesting. Transitioning to <code>Routes</code> helps create clearer and more maintainable routing structures in your application.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -1148,10 +1369,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "content.code.copy"], "search": "/assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.56dfad97.min.js"></script>
       
     
   </body>

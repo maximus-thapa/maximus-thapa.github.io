@@ -8,19 +8,25 @@
       
       
       
+        <link rel="canonical" href="https://maximus-thapa.github.io/blog/2024/07/02/the-functional-update-pattern-explained/">
       
       
+        <link rel="prev" href="../understanding-the-importance-of-using-previous-state-in-react/">
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      
+        <link rel="next" href="../../03/react-state-updates-explained/">
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
     
     
       
-        <title>Maximus Thapa</title>
+        <title>The Functional Update Pattern Explained - Maximus Thapa</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.35f28582.min.css">
       
       
 
@@ -39,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -57,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#the-functional-update-pattern-explained" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -67,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Maximus Thapa" class="md-header__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
+    <a href="../../../../.." title="Maximus Thapa" class="md-header__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -87,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              The Functional Update Pattern Explained
             
           </span>
         </div>
@@ -156,7 +167,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="../../../../.." class="md-tabs__link">
         
   
     
@@ -171,11 +182,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/blog/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../" class="md-tabs__link">
           
   
   Blog
@@ -193,7 +206,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/nepali/intro/" class="md-tabs__link">
+        <a href="../../../../../nepali/intro/" class="md-tabs__link">
           
   
   Nepali
@@ -211,7 +224,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/reactPattern/functional-updated-pattern/" class="md-tabs__link">
+        <a href="../../../../../reactPattern/functional-updated-pattern/" class="md-tabs__link">
           
   
   React Pattern
@@ -229,7 +242,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/auth/intro/" class="md-tabs__link">
+        <a href="../../../../../auth/intro/" class="md-tabs__link">
           
   
   Auth
@@ -251,7 +264,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -262,7 +277,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Maximus Thapa" class="md-nav__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
+    <a href="../../../../.." title="Maximus Thapa" class="md-nav__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -280,7 +295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -297,23 +312,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -324,7 +344,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -335,12 +355,14 @@
                 
   
   
+    
+  
   
     
   
   
-    <li class="md-nav__item">
-      <a href="/blog/" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -401,7 +423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/archive/2024/" class="md-nav__link">
+      <a href="../../../../archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -475,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/nepali/intro/" class="md-nav__link">
+      <a href="../../../../../nepali/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -534,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/nepali/js/callbackfunction/" class="md-nav__link">
+      <a href="../../../../../nepali/js/callbackfunction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -601,7 +623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/nepali/react/context/" class="md-nav__link">
+      <a href="../../../../../nepali/react/context/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -675,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reactPattern/functional-updated-pattern/" class="md-nav__link">
+      <a href="../../../../../reactPattern/functional-updated-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -696,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reactPattern/when-not-to-use-functional-update/" class="md-nav__link">
+      <a href="../../../../../reactPattern/when-not-to-use-functional-update/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -717,7 +739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reactPattern/functional-pattern-and-technique/" class="md-nav__link">
+      <a href="../../../../../reactPattern/functional-pattern-and-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -783,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/intro/" class="md-nav__link">
+      <a href="../../../../../auth/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -842,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/router-version/" class="md-nav__link">
+      <a href="../../../../../auth/router/router-version/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -863,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/react-router/" class="md-nav__link">
+      <a href="../../../../../auth/router/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -884,7 +906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/why-react-router/" class="md-nav__link">
+      <a href="../../../../../auth/router/why-react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -905,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/not-found-component/" class="md-nav__link">
+      <a href="../../../../../auth/router/not-found-component/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -926,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/routing/" class="md-nav__link">
+      <a href="../../../../../auth/router/routing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -947,7 +969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/best-method-for-auth/" class="md-nav__link">
+      <a href="../../../../../auth/router/best-method-for-auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -968,7 +990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/auth-techniques/" class="md-nav__link">
+      <a href="../../../../../auth/router/auth-techniques/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1035,7 +1057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/example/simple-login/" class="md-nav__link">
+      <a href="../../../../../auth/example/simple-login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1056,7 +1078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/example/context-auth/" class="md-nav__link">
+      <a href="../../../../../auth/example/context-auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1093,6 +1115,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1102,6 +1126,52 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-features-of-the-functional-update-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features of the Functional Update Pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-the-functional-update-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of the Functional Update Pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-the-functional-update-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Use the Functional Update Pattern?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1110,14 +1180,163 @@
             
           
           
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-  <h1>404 - Not found</h1>
-
-              </article>
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
             </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2024-07-02 00:00:00" class="md-ellipsis">July 2, 2024</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              2 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
           
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+  
+
+<nav class="md-tags" >
+  
+    
+    
+    
+      <span class="md-tag">react</span>
+    
+  
+</nav>
+
+
+
+<h1 id="the-functional-update-pattern-explained">The Functional Update Pattern Explained</h1>
+<p>The <strong>functional update pattern</strong> in React is a method of updating state by using a function that takes the previous state as an argument. This pattern ensures that you always work with the most current state value, which is especially important in scenarios where state updates may be batched or occur in quick succession.</p>
+<!-- more -->
+
+<hr />
+<div class="admonition question">
+<p class="admonition-title">Mastering State Management in React: The Functional Update Pattern Explained</p>
+</div>
+<h2 id="key-features-of-the-functional-update-pattern">Key Features of the Functional Update Pattern</h2>
+<ol>
+<li>
+<p><strong>Access to Previous State</strong>:</p>
+<ul>
+<li>The function you provide to the state updater (like setState) receives the previous state as an argument. This allows you to derive the new state based on the most recent value.</li>
+</ul>
+</li>
+<li>
+<p><strong>Asynchronous Updates</strong>:</p>
+<ul>
+<li>React's state updates can be asynchronous. By using the functional update pattern, you avoid issues that can arise from referencing a stale state value.</li>
+</ul>
+</li>
+<li>
+<p><strong>Prevents Bugs</strong>:</p>
+<ul>
+<li>When multiple updates depend on the previous state, using this pattern can prevent bugs related to incorrect state values due to overlapping updates.</li>
+</ul>
+</li>
+</ol>
+<h2 id="example-of-the-functional-update-pattern">Example of the Functional Update Pattern</h2>
+<p>Here’s a simple example using a counter component:</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">Counter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">count</span><span class="p">,</span><span class="w"> </span><span class="nx">setCount</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">increment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nx">setCount</span><span class="p">((</span><span class="nx">prevCount</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">prevCount</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// Using functional update</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="p">};</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">decrement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nx">setCount</span><span class="p">((</span><span class="nx">prevCount</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">prevCount</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// Using functional update</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="p">};</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">      </span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">Count</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">count</span><span class="p">}&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">      </span><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">increment</span><span class="p">}&gt;</span><span class="nx">Increment</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">      </span><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">decrement</span><span class="p">}&gt;</span><span class="nx">Decrement</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">  </span><span class="p">);</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="p">};</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">Counter</span><span class="p">;</span>
+</span></code></pre></div>
+<h2 id="why-use-the-functional-update-pattern">Why Use the Functional Update Pattern?</h2>
+<ol>
+<li><strong>Accuracy</strong>: Ensures that you are working with the latest state value, preventing errors due to outdated references.</li>
+<li><strong>Simplicity</strong>: Keeps your state updates straightforward and clear, especially when the new state depends on the previous state.</li>
+<li><strong>Better Performance</strong>: Helps React optimize re-renders, as it can determine more efficiently when state updates occur.</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>The functional update pattern is an essential technique in React for managing state updates accurately. By utilizing this pattern, you can create more reliable and maintainable components, ensuring that your application behaves as expected even in complex scenarios.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -1148,10 +1367,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "content.code.copy"], "search": "/assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.56dfad97.min.js"></script>
       
     
   </body>

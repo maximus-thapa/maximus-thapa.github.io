@@ -8,19 +8,25 @@
       
       
       
+        <link rel="canonical" href="https://maximus-thapa.github.io/blog/2024/07/10/deciding-where-to-define-your-variables-in-react/">
       
       
+        <link rel="prev" href="../../09/when-to-use-jsx-vs-js-in-react/">
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      
+        <link rel="next" href="../../11/transitioning-from-switch-to-routes/">
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
     
     
       
-        <title>Maximus Thapa</title>
+        <title>Deciding Where to Define Your Variables in React - Maximus Thapa</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.35f28582.min.css">
       
       
 
@@ -39,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -57,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#deciding-where-to-define-your-variables-in-react" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -67,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Maximus Thapa" class="md-header__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
+    <a href="../../../../.." title="Maximus Thapa" class="md-header__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -87,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Deciding Where to Define Your Variables in React
             
           </span>
         </div>
@@ -156,7 +167,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="../../../../.." class="md-tabs__link">
         
   
     
@@ -171,11 +182,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/blog/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../" class="md-tabs__link">
           
   
   Blog
@@ -193,7 +206,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/nepali/intro/" class="md-tabs__link">
+        <a href="../../../../../nepali/intro/" class="md-tabs__link">
           
   
   Nepali
@@ -211,7 +224,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/reactPattern/functional-updated-pattern/" class="md-tabs__link">
+        <a href="../../../../../reactPattern/functional-updated-pattern/" class="md-tabs__link">
           
   
   React Pattern
@@ -229,7 +242,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/auth/intro/" class="md-tabs__link">
+        <a href="../../../../../auth/intro/" class="md-tabs__link">
           
   
   Auth
@@ -251,7 +264,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -262,7 +277,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Maximus Thapa" class="md-nav__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
+    <a href="../../../../.." title="Maximus Thapa" class="md-nav__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -280,7 +295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -297,23 +312,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -324,7 +344,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -335,12 +355,14 @@
                 
   
   
+    
+  
   
     
   
   
-    <li class="md-nav__item">
-      <a href="/blog/" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -401,7 +423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/archive/2024/" class="md-nav__link">
+      <a href="../../../../archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -475,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/nepali/intro/" class="md-nav__link">
+      <a href="../../../../../nepali/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -534,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/nepali/js/callbackfunction/" class="md-nav__link">
+      <a href="../../../../../nepali/js/callbackfunction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -601,7 +623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/nepali/react/context/" class="md-nav__link">
+      <a href="../../../../../nepali/react/context/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -675,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reactPattern/functional-updated-pattern/" class="md-nav__link">
+      <a href="../../../../../reactPattern/functional-updated-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -696,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reactPattern/when-not-to-use-functional-update/" class="md-nav__link">
+      <a href="../../../../../reactPattern/when-not-to-use-functional-update/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -717,7 +739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reactPattern/functional-pattern-and-technique/" class="md-nav__link">
+      <a href="../../../../../reactPattern/functional-pattern-and-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -783,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/intro/" class="md-nav__link">
+      <a href="../../../../../auth/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -842,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/router-version/" class="md-nav__link">
+      <a href="../../../../../auth/router/router-version/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -863,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/react-router/" class="md-nav__link">
+      <a href="../../../../../auth/router/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -884,7 +906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/why-react-router/" class="md-nav__link">
+      <a href="../../../../../auth/router/why-react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -905,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/not-found-component/" class="md-nav__link">
+      <a href="../../../../../auth/router/not-found-component/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -926,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/routing/" class="md-nav__link">
+      <a href="../../../../../auth/router/routing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -947,7 +969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/best-method-for-auth/" class="md-nav__link">
+      <a href="../../../../../auth/router/best-method-for-auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -968,7 +990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/auth-techniques/" class="md-nav__link">
+      <a href="../../../../../auth/router/auth-techniques/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1035,7 +1057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/example/simple-login/" class="md-nav__link">
+      <a href="../../../../../auth/example/simple-login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1056,7 +1078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/example/context-auth/" class="md-nav__link">
+      <a href="../../../../../auth/example/context-auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1093,6 +1115,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1102,6 +1126,91 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reasons-for-placing-outside" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reasons for Placing Outside:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Practice
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-define-inside-the-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Define Inside the Component:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1110,14 +1219,170 @@
             
           
           
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-  <h1>404 - Not found</h1>
-
-              </article>
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
             </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2024-07-10 00:00:00" class="md-ellipsis">July 10, 2024</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              2 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
           
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+  
+
+<nav class="md-tags" >
+  
+    
+    
+    
+      <span class="md-tag">react</span>
+    
+  
+</nav>
+
+
+
+<h1 id="deciding-where-to-define-your-variables-in-react">Deciding Where to Define Your Variables in React</h1>
+<p>Placing <code>const { Header } = Layout;</code> outside the component is generally considered better practice.</p>
+<!-- more -->
+
+<hr />
+<div class="admonition question">
+<p class="admonition-title">Code Clarity and Performance: Deciding Where to Define Your Variables in React</p>
+</div>
+<h2 id="overview">Overview</h2>
+<p>Here’s why:</p>
+<h3 id="reasons-for-placing-outside">Reasons for Placing Outside:</h3>
+<ol>
+<li>
+<p><strong>Performance</strong>: When you destructure components outside the functional component, it prevents unnecessary re-declaration on every render. This is more efficient, especially if the component gets re-rendered frequently.</p>
+</li>
+<li>
+<p><strong>Clarity and Readability</strong>: Keeping imports and destructuring at the top of your file can make it easier to read and understand the code. It separates the definition of components from their usage, which can help clarify the structure of your component.</p>
+</li>
+<li>
+<p><strong>Consistency</strong>: It follows a common pattern seen in many React projects, making the codebase easier for other developers to read and understand.</p>
+</li>
+</ol>
+<h3 id="standard-practice">Standard Practice</h3>
+<p>The standard practice in React (and JavaScript in general) is to keep declarations that don’t depend on component props or state outside the component function. For example, you would typically see:</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Layout</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;antd&quot;</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Header</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Layout</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">Navbar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="c1">// Component logic and JSX here</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">};</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">Navbar</span><span class="p">;</span>
+</span></code></pre></div>
+<p>This way, <code>Header</code> is defined once and reused across renders, which is cleaner and slightly more performant.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>While it's not wrong to place destructuring inside the component, doing so can lead to minor inefficiencies and decreased readability. Thus, for most cases, especially when dealing with components or variables that don't change, it’s better to keep them outside the functional component.</p>
+<hr />
+<h2 id="additional">Additional</h2>
+<h3 id="when-to-define-inside-the-component">When to Define Inside the Component:</h3>
+<p>You might want to define variables or destructure properties inside a component in the following situations:</p>
+<ol>
+<li>
+<p><strong>Dependent on Props or State</strong>:</p>
+<p>If the value you're destructuring depends on props or state, it must be defined inside the component. For example:</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">MyComponent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">user</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">user</span><span class="p">;</span><span class="w"> </span><span class="c1">// Must be inside because it depends on the user prop</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">      </span><span class="p">{</span><span class="nx">name</span><span class="p">}</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="p">{</span><span class="nx">age</span><span class="p">}</span><span class="w"> </span><span class="nx">years</span><span class="w"> </span><span class="nx">old</span><span class="p">.</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="p">);</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">};</span>
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>Scoped Variables</strong>:</p>
+<p>If you have variables that are only relevant to the logic within that component and don’t need to be accessed outside, defining them inside keeps your code clean and encapsulated.</p>
+</li>
+<li>
+<p><strong>Dynamic Imports</strong>:</p>
+<p>In cases where you're dynamically importing components or libraries based on certain conditions, those imports will need to be inside the component.</p>
+</li>
+<li>
+<p><strong>Conditional Logic</strong>:</p>
+<p>If the destructured values change based on some conditions or computations, they should be defined inside the component to maintain the appropriate context.</p>
+</li>
+</ol>
+<h3 id="conclusion_1">Conclusion</h3>
+<p>While it’s generally better to define stable components outside of functional components for performance and clarity, there are specific situations where defining variables inside is necessary or makes more sense. Balancing performance, readability, and context is key to structuring your React components effectively.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -1148,10 +1413,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "content.code.copy"], "search": "/assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.56dfad97.min.js"></script>
       
     
   </body>
