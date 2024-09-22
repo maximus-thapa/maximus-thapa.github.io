@@ -8,19 +8,25 @@
       
       
       
+        <link rel="canonical" href="https://maximus-thapa.github.io/blog/2024/07/12/conditionally-rendering-navbar-in-react/">
       
       
+        <link rel="prev" href="../../11/transitioning-from-switch-to-routes/">
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      
+        <link rel="next" href="../../14/understanding-authentication-in-react-using-context-api/">
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
     
     
       
-        <title>Maximus Thapa</title>
+        <title>Conditionally Rendering Navbar in React - Maximus Thapa</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.35f28582.min.css">
       
       
 
@@ -39,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -57,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#conditionally-rendering-navbar-in-react" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -67,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Maximus Thapa" class="md-header__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
+    <a href="../../../../.." title="Maximus Thapa" class="md-header__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -87,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Conditionally Rendering Navbar in React
             
           </span>
         </div>
@@ -156,7 +167,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="../../../../.." class="md-tabs__link">
         
   
     
@@ -171,11 +182,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/blog/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../" class="md-tabs__link">
           
   
   Blog
@@ -199,7 +212,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/programmingNepali/intro/" class="md-tabs__link">
+        <a href="../../../../../programmingNepali/intro/" class="md-tabs__link">
           
   
   Nepali
@@ -220,7 +233,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/reactPattern/functional-updated-pattern/" class="md-tabs__link">
+        <a href="../../../../../reactPattern/functional-updated-pattern/" class="md-tabs__link">
           
   
   React Pattern
@@ -238,7 +251,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/auth/intro/" class="md-tabs__link">
+        <a href="../../../../../auth/intro/" class="md-tabs__link">
           
   
   Auth
@@ -260,7 +273,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -271,7 +286,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Maximus Thapa" class="md-nav__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
+    <a href="../../../../.." title="Maximus Thapa" class="md-nav__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -289,7 +304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -306,23 +321,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -333,7 +353,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -344,12 +364,14 @@
                 
   
   
+    
+  
   
     
   
   
-    <li class="md-nav__item">
-      <a href="/blog/" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -410,7 +432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/archive/2024/" class="md-nav__link">
+      <a href="../../../../archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -522,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/programmingNepali/intro/" class="md-nav__link">
+      <a href="../../../../../programmingNepali/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -543,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/programmingNepali/callbackfunction/" class="md-nav__link">
+      <a href="../../../../../programmingNepali/callbackfunction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -617,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reactPattern/functional-updated-pattern/" class="md-nav__link">
+      <a href="../../../../../reactPattern/functional-updated-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -638,7 +660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reactPattern/when-not-to-use-functional-update/" class="md-nav__link">
+      <a href="../../../../../reactPattern/when-not-to-use-functional-update/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -659,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reactPattern/functional-pattern-and-technique/" class="md-nav__link">
+      <a href="../../../../../reactPattern/functional-pattern-and-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -725,7 +747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/intro/" class="md-nav__link">
+      <a href="../../../../../auth/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -784,7 +806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/router-version/" class="md-nav__link">
+      <a href="../../../../../auth/router/router-version/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -805,7 +827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/react-router/" class="md-nav__link">
+      <a href="../../../../../auth/router/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -826,7 +848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/why-react-router/" class="md-nav__link">
+      <a href="../../../../../auth/router/why-react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -847,7 +869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/not-found-component/" class="md-nav__link">
+      <a href="../../../../../auth/router/not-found-component/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -868,7 +890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/routing/" class="md-nav__link">
+      <a href="../../../../../auth/router/routing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -889,7 +911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/router/best-method-for-auth/" class="md-nav__link">
+      <a href="../../../../../auth/router/best-method-for-auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -956,7 +978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/example/simple-login/" class="md-nav__link">
+      <a href="../../../../../auth/example/simple-login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -977,7 +999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/auth/example/context-auth/" class="md-nav__link">
+      <a href="../../../../../auth/example/context-auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1014,6 +1036,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1023,6 +1047,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#advantages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advantages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternatives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1031,14 +1092,133 @@
             
           
           
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-  <h1>404 - Not found</h1>
-
-              </article>
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
             </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2024-07-12 00:00:00" class="md-ellipsis">July 12, 2024</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              2 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
           
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+  
+
+<nav class="md-tags" >
+  
+    
+    
+    
+      <span class="md-tag">react</span>
+    
+  
+</nav>
+
+
+
+<h1 id="conditionally-rendering-navbar-in-react">Conditionally Rendering Navbar in React</h1>
+<p>Using <code>{isAuthenticated &amp;&amp; &lt;Navbar /&gt;}</code> to conditionally render the <code>Navbar</code> is a common and effective approach in React. It provides a simple way to show or hide components based on a boolean state.</p>
+<!-- more -->
+
+<p>Here are some points to consider regarding this approach:</p>
+<h2 id="advantages">Advantages</h2>
+<ol>
+<li>
+<p><strong>Simplicity</strong>: This approach is straightforward and easy to understand, making it clear that the <code>Navbar</code> is tied directly to the authentication state.</p>
+</li>
+<li>
+<p><strong>Performance</strong>: Conditional rendering ensures that the <code>Navbar</code> component is not mounted in the DOM unless the user is authenticated, which can save on unnecessary rendering and processing.</p>
+</li>
+<li>
+<p><strong>Readability</strong>: The code remains clean and readable, maintaining a clear separation between the authentication logic and the UI rendering.</p>
+</li>
+</ol>
+<h2 id="alternatives">Alternatives</h2>
+<p>While the current approach works well, there are alternative methods you could consider, depending on your application's needs:</p>
+<ol>
+<li>
+<p><strong>Higher-Order Component (HOC)</strong>: You could create a HOC that wraps your main app or specific routes, handling the logic of showing or hiding the <code>Navbar</code>. This could make it reusable across different parts of your app.</p>
+</li>
+<li>
+<p><strong>Context API</strong>: If your app grows and requires more complex state management, you might consider using the Context API to manage authentication state across your application. This allows for more flexibility and scalability.</p>
+</li>
+<li>
+<p><strong>Route-Based Rendering</strong>: Instead of conditionally rendering in the main <code>App</code> component, you could manage the <code>Navbar</code> directly in your <code>AppRoutes</code>. For example, you could show the <code>Navbar</code> on all authenticated routes and hide it on public routes.</p>
+</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>For many applications, using <code>{isAuthenticated &amp;&amp; &lt;Navbar /&gt;}</code> is perfectly suitable and efficient. As your application grows, you can always refactor your authentication logic as needed. If you find that your authentication logic or routing becomes more complex, considering alternatives like HOCs or the Context API might be beneficial.</p>
+<p>If you have any specific requirements or future plans for your application, feel free to share, and I can provide more tailored advice!</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -1069,10 +1249,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "content.code.copy"], "search": "/assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.56dfad97.min.js"></script>
       
     
   </body>
