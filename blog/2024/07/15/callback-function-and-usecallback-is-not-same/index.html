@@ -8,25 +8,23 @@
       
       
       
-        <link rel="canonical" href="https://maximus-thapa.github.io/nepali/intro/">
+        <link rel="canonical" href="https://maximus-thapa.github.io/blog/2024/07/15/callback-function-and-usecallback-is-not-same/">
       
       
-        <link rel="prev" href="../../blog/archive/2024/">
+        <link rel="prev" href="../../14/understanding-authentication-in-react-using-context-api/">
       
       
-        <link rel="next" href="../js/callbackfunction/">
       
-      
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
     
     
       
-        <title>Intro - Maximus Thapa</title>
+        <title>Callback Function and useCallback is not same - Maximus Thapa</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.35f28582.min.css">
       
       
 
@@ -45,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#in-nepali" class="md-skip">
+        <a href="#callback-function-and-usecallback-is-not-same" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +76,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Maximus Thapa" class="md-header__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
+    <a href="../../../../.." title="Maximus Thapa" class="md-header__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Intro
+              Callback Function and useCallback is not same
             
           </span>
         </div>
@@ -165,11 +163,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../blog/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../" class="md-tabs__link">
           
   
   Blog
@@ -183,13 +183,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../../nepali/intro/" class="md-tabs__link">
           
   
   Nepali
@@ -207,7 +205,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../reactPattern/functional-updated-pattern/" class="md-tabs__link">
+        <a href="../../../../../reactPattern/functional-updated-pattern/" class="md-tabs__link">
           
   
   React Pattern
@@ -225,7 +223,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../auth/intro/" class="md-tabs__link">
+        <a href="../../../../../auth/intro/" class="md-tabs__link">
           
   
   Auth
@@ -249,7 +247,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../state-management/zustand/intro/" class="md-tabs__link">
+        <a href="../../../../../state-management/zustand/intro/" class="md-tabs__link">
           
   
   State
@@ -274,7 +272,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -285,7 +285,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Maximus Thapa" class="md-nav__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
+    <a href="../../../../.." title="Maximus Thapa" class="md-nav__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -300,23 +300,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -327,7 +332,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -338,12 +343,14 @@
                 
   
   
+    
+  
   
     
   
   
-    <li class="md-nav__item">
-      <a href="../../blog/" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -404,7 +411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/archive/2024/" class="md-nav__link">
+      <a href="../../../../archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -437,28 +444,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -469,7 +471,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Nepali
@@ -480,28 +482,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Intro
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../../nepali/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -510,33 +494,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#in-nepali" class="md-nav__link">
-    <span class="md-ellipsis">
-      In Nepali
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -587,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../js/callbackfunction/" class="md-nav__link">
+      <a href="../../../../../nepali/js/callbackfunction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -608,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../js/highorderfunction/" class="md-nav__link">
+      <a href="../../../../../nepali/js/highorderfunction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -629,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../js/explain-to-5-year-old/" class="md-nav__link">
+      <a href="../../../../../nepali/js/explain-to-5-year-old/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -650,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../js/example/" class="md-nav__link">
+      <a href="../../../../../nepali/js/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -671,7 +628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../js/related/" class="md-nav__link">
+      <a href="../../../../../nepali/js/related/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -692,7 +649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../js/usecase/" class="md-nav__link">
+      <a href="../../../../../nepali/js/usecase/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -759,7 +716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react/context/" class="md-nav__link">
+      <a href="../../../../../nepali/react/context/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -833,7 +790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reactPattern/functional-updated-pattern/" class="md-nav__link">
+      <a href="../../../../../reactPattern/functional-updated-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -854,7 +811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reactPattern/when-not-to-use-functional-update/" class="md-nav__link">
+      <a href="../../../../../reactPattern/when-not-to-use-functional-update/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -875,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reactPattern/functional-pattern-and-technique/" class="md-nav__link">
+      <a href="../../../../../reactPattern/functional-pattern-and-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -941,7 +898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../auth/intro/" class="md-nav__link">
+      <a href="../../../../../auth/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1000,7 +957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../auth/router/router-version/" class="md-nav__link">
+      <a href="../../../../../auth/router/router-version/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1021,7 +978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../auth/router/react-router/" class="md-nav__link">
+      <a href="../../../../../auth/router/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1042,7 +999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../auth/router/why-react-router/" class="md-nav__link">
+      <a href="../../../../../auth/router/why-react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1063,7 +1020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../auth/router/not-found-component/" class="md-nav__link">
+      <a href="../../../../../auth/router/not-found-component/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1084,7 +1041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../auth/router/routing/" class="md-nav__link">
+      <a href="../../../../../auth/router/routing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1105,7 +1062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../auth/router/best-method-for-auth/" class="md-nav__link">
+      <a href="../../../../../auth/router/best-method-for-auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1126,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../auth/router/auth-techniques/" class="md-nav__link">
+      <a href="../../../../../auth/router/auth-techniques/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1193,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../auth/example/simple-login/" class="md-nav__link">
+      <a href="../../../../../auth/example/simple-login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1214,7 +1171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../auth/example/context-auth/" class="md-nav__link">
+      <a href="../../../../../auth/example/context-auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1326,7 +1283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/zustand/intro/" class="md-nav__link">
+      <a href="../../../../../state-management/zustand/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1363,6 +1320,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1372,6 +1331,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1380,9 +1341,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#in-nepali" class="md-nav__link">
+  <a href="#callback-function" class="md-nav__link">
     <span class="md-ellipsis">
-      In Nepali
+      Callback Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usecallback-hook" class="md-nav__link">
+    <span class="md-ellipsis">
+      useCallback Hook
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Differences
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional
     </span>
   </a>
   
@@ -1397,48 +1394,202 @@
             
           
           
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
-  <h1>Intro</h1>
-
-<h2 id="in-nepali">In Nepali</h2>
-<hr />
-<p>JavaScript मा "parameter" र "argument" बीचको भिन्नता के हो भने:</p>
-<ul>
-<li><strong>Parameter</strong>: जब तपाईँले कुनै फङ्क्शन बनाउनुहुन्छ, त्यहाँको भित्रको भेरिएबलहरूलाई "parameter" भनिन्छ। यी भेरिएबलहरूले फङ्क्शनले लिने मानहरूलाई जनाउँछन्। उदाहरणका लागि:</li>
-</ul>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">greet</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">name</span><span class="p">);</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>यहाँ <code>name</code> एक parameter हो।</p>
-<ul>
-<li><strong>Argument</strong>: जब तपाईँले फङ्क्शनलाई कल गर्नुहुन्छ र यसमा कुनै मानहरू पठाउनुहुन्छ, तिनलाई "argument" भनिन्छ। जस्तै:</li>
-</ul>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">greet</span><span class="p">(</span><span class="s2">&quot;Sita&quot;</span><span class="p">);</span>
-</span></code></pre></div>
-<p>यहाँ <code>"Sita"</code> एक argument हो जुन <code>greet</code> फङ्क्शनलाई पठाइएको छ।</p>
-<p>संक्षेपमा, parameter भनेको फङ्क्शनको परिभाषामा रहेका भेरिएबलहरू हुन्, र argument भनेको फङ्क्शनलाई कल गर्दा प्रदान गरिएका मानहरू हुन्।</p>
-
-
-
-
-
-
-
-
-
-
-
-
-                
-              </article>
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
             </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2024-07-15 00:00:00" class="md-ellipsis">July 15, 2024</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              2 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
           
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+  
+
+<nav class="md-tags" >
+  
+    
+    
+    
+      <span class="md-tag">react</span>
+    
+  
+</nav>
+
+
+
+<h1 id="callback-function-and-usecallback-is-not-same">Callback Function and useCallback is not same</h1>
+<p>No, a <strong>callback function</strong> and the <code>useCallback</code> hook in React are not the same thing, though they are related concepts. Here’s a breakdown of each:</p>
+<!-- more -->
+
+<hr />
+<h2 id="callback-function">Callback Function</h2>
+<ul>
+<li>Definition: A callback function is simply a function that you pass as an argument to another function. It is executed at a later time when a certain condition is met or an event occurs.</li>
+<li>Usage: In React, callback functions are often used for handling events, managing state updates, or communicating between components.</li>
+</ul>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">handleClick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Button clicked!&quot;</span><span class="p">);</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">};</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1">// Using it as a callback</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleClick</span><span class="p">}&gt;</span><span class="nx">Click</span><span class="w"> </span><span class="nx">Me</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;;</span>
+</span></code></pre></div>
+<hr />
+<h2 id="usecallback-hook"><code>useCallback</code> Hook</h2>
+<ul>
+<li>Definition: The <code>useCallback</code> hook is a React hook that returns a memoized version of a callback function. It’s used to optimize performance by preventing unnecessary re-creations of functions on every render.</li>
+<li>Usage: You typically use <code>useCallback</code> when passing callback functions to child components to avoid re-renders when the parent component updates.</li>
+</ul>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="p">,</span><span class="w"> </span><span class="nx">useCallback</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;react&quot;</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">App</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">count</span><span class="p">,</span><span class="w"> </span><span class="nx">setCount</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="c1">// Memoized callback function using useCallback</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">handleIncrement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useCallback</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="nx">setCount</span><span class="p">((</span><span class="nx">prevCount</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">prevCount</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span><span class="p">},</span><span class="w"> </span><span class="p">[]);</span><span class="w"> </span><span class="c1">// Dependency array</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">      </span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">Count</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">count</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">      </span><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleIncrement</span><span class="p">}&gt;</span><span class="nx">Increment</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">  </span><span class="p">);</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="p">};</span>
+</span></code></pre></div>
+<h2 id="key-differences">Key Differences</h2>
+<ol>
+<li>
+<p>Purpose:</p>
+<ul>
+<li>Callback Function: A general concept for any function passed as an argument.</li>
+<li><code>useCallback</code>: A specific hook to memoize a function, optimizing performance and avoiding unnecessary re-renders.</li>
+</ul>
+</li>
+<li>
+<p>Performance:</p>
+<ul>
+<li>Callback Function: Can lead to performance issues if the function is re-created on every render.</li>
+<li><code>useCallback</code>: Helps prevent performance issues by keeping the same function instance between renders when dependencies don’t change.</li>
+</ul>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>While both terms involve functions that can be passed around, a callback function is a general programming concept, whereas <code>useCallback</code> is a specific React hook used to optimize performance.</p>
+<hr />
+<h2 id="additional">Additional</h2>
+<p>In the example you provided, <code>handleClick</code> is considered a callback function because it is passed as an argument to another function, specifically the event handler for the button's <code>onClick</code> event.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Breakdown of the Example</label><label for="__tabbed_1_2">How It Works</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ol>
+<li>
+<p>Definition of the Callback Function:</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">handleClick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Button clicked!&quot;</span><span class="p">);</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">};</span>
+</span></code></pre></div>
+<ul>
+<li>Here, <code>handleClick</code> is a function defined using an arrow function syntax. It will execute the code inside its body when called.</li>
+</ul>
+</li>
+<li>
+<p>Using the Callback in an Event Handler:</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleClick</span><span class="p">}&gt;</span><span class="nx">Click</span><span class="w"> </span><span class="nx">Me</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<ul>
+<li>The <code>handleClick</code> function is passed as the value for the <code>onClick</code> property of the <code>&lt;button&gt;</code> element.</li>
+<li>In this context, <code>handleClick</code> is not executed immediately; instead, it will be invoked later by React when the button is clicked.</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>
+<p><strong>Event Handling</strong>: When the user clicks the button, the <code>onClick</code> event is triggered. React calls the <code>handleClick</code> function at that moment, executing its contents (in this case, logging "Button clicked!" to the console).</p>
+</li>
+<li>
+<p><strong>Callback Nature</strong>: Because <code>handleClick</code> is not executed until the button is clicked, it acts as a "callback" — a function that will be called later in response to an event.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<p><strong>Summary</strong></p>
+<p>In this example, <code>handleClick</code> is a callback function because it is passed to the <code>onClick</code> event handler and is executed when the user interacts with the button. This pattern is common in React for managing user interactions and handling events.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -1469,10 +1620,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.56dfad97.min.js"></script>
       
     
   </body>
