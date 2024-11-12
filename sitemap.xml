@@ -2,182 +2,146 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://maximus-thapa.github.io/</loc>
-         <lastmod>2024-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://maximus-thapa.github.io/auth/intro/</loc>
-         <lastmod>2024-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://maximus-thapa.github.io/auth/example/context-auth/</loc>
-         <lastmod>2024-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://maximus-thapa.github.io/auth/example/simple-login/</loc>
-         <lastmod>2024-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://maximus-thapa.github.io/auth/router/auth-techniques/</loc>
-         <lastmod>2024-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://maximus-thapa.github.io/auth/router/best-method-for-auth/</loc>
-         <lastmod>2024-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://maximus-thapa.github.io/auth/router/not-found-component/</loc>
-         <lastmod>2024-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://maximus-thapa.github.io/auth/router/react-router/</loc>
-         <lastmod>2024-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://maximus-thapa.github.io/auth/router/router-version/</loc>
-         <lastmod>2024-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://maximus-thapa.github.io/auth/router/routing/</loc>
-         <lastmod>2024-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://maximus-thapa.github.io/auth/router/why-react-router/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/blog/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/blog/2024/07/15/callback-function-and-usecallback-is-not-same/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/blog/2024/07/12/conditionally-rendering-navbar-in-react/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/blog/2024/07/02/the-functional-update-pattern-explained/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/blog/2024/07/02/understanding-the-importance-of-using-previous-state-in-react/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/blog/2024/07/06/folder-structure-for-large-react-application/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/blog/2024/07/08/where-to-define-the-navigation-links-in-a-react-application/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/blog/2024/07/03/react-state-updates-explained/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/blog/2024/07/11/transitioning-from-switch-to-routes/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/blog/2024/07/14/understanding-authentication-in-react-using-context-api/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/blog/2024/07/09/when-to-use-jsx-vs-js-in-react/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/blog/2024/07/10/deciding-where-to-define-your-variables-in-react/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/blog/2024/07/08/where-to-place-your-router-setup/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/blog/2024/07/04/why-props-are-objects-in-react/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/nepali/intro/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/nepali/designpattern/intro/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/nepali/js/callbackfunction/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/nepali/js/example/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/nepali/js/explain-to-5-year-old/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/nepali/js/highorderfunction/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/nepali/js/related/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/nepali/js/usecase/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/nepali/react/context/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/nextjs/intro/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/reactPattern/functional-pattern-and-technique/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/reactPattern/functional-updated-pattern/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/reactPattern/when-not-to-use-functional-update/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/state-management/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/state-management/immer/example/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/state-management/immer/with-and-without-immer/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
+    </url>
+    <url>
+         <loc>https://maximus-thapa.github.io/state-management/rtk/folder-structure/</loc>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/state-management/zustand/intro/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/blog/archive/2024/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/blog/page/2/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
     <url>
          <loc>https://maximus-thapa.github.io/blog/archive/2024/page/2/</loc>
-         <lastmod>2024-09-28</lastmod>
+         <lastmod>2024-11-12</lastmod>
     </url>
 </urlset>
