@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.2">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.4af4bdda.min.css">
       
       
 
@@ -41,7 +41,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -77,12 +77,12 @@
     <a href="." title="Maximus Thapa" class="md-header__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -102,36 +102,38 @@
     </div>
     
     
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -142,6 +144,7 @@
     </div>
   </div>
 </div>
+      
     
     
   </nav>
@@ -162,11 +165,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="blog/" class="md-tabs__link">
           
+  
   
   Blog
 
@@ -180,11 +185,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="nepali/intro/" class="md-tabs__link">
           
+  
   
   Nepali
 
@@ -198,11 +205,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="reactPattern/functional-updated-pattern/" class="md-tabs__link">
           
+  
   
   React Pattern
 
@@ -216,11 +225,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="state-management/" class="md-tabs__link">
           
+  
   
   State
 
@@ -234,11 +245,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="nextjs/intro/" class="md-tabs__link">
           
+  
   
   Next js
 
@@ -273,7 +286,7 @@
     <a href="." title="Maximus Thapa" class="md-nav__button md-logo" aria-label="Maximus Thapa" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     Maximus Thapa
@@ -291,23 +304,24 @@
     
     
     
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
+  
   
   <span class="md-ellipsis">
     Blog
+    
   </span>
   
 
@@ -333,8 +347,10 @@
       <a href="blog/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Index
+    
   </span>
   
 
@@ -354,10 +370,12 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
@@ -366,8 +384,10 @@
           <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Archive
+    
   </span>
   
 
@@ -393,8 +413,10 @@
       <a href="blog/archive/2024/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     2024
+    
   </span>
   
 
@@ -429,23 +451,24 @@
     
     
     
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
+  
   
   <span class="md-ellipsis">
     Nepali
+    
   </span>
   
 
@@ -469,8 +492,10 @@
       <a href="nepali/intro/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Intro
+    
   </span>
   
 
@@ -490,10 +515,12 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
@@ -502,8 +529,10 @@
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     JS
+    
   </span>
   
 
@@ -527,8 +556,10 @@
       <a href="nepali/js/callbackfunction/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     callback function
+    
   </span>
   
 
@@ -548,8 +579,10 @@
       <a href="nepali/js/highorderfunction/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     highorder function
+    
   </span>
   
 
@@ -569,8 +602,10 @@
       <a href="nepali/js/explain-to-5-year-old/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Explain
+    
   </span>
   
 
@@ -590,8 +625,10 @@
       <a href="nepali/js/example/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Example
+    
   </span>
   
 
@@ -611,8 +648,10 @@
       <a href="nepali/js/related/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Related
+    
   </span>
   
 
@@ -632,8 +671,10 @@
       <a href="nepali/js/usecase/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Use Case
+    
   </span>
   
 
@@ -661,10 +702,12 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
@@ -673,8 +716,10 @@
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     React
+    
   </span>
   
 
@@ -698,8 +743,10 @@
       <a href="nepali/react/context/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     context api
+    
   </span>
   
 
@@ -727,10 +774,12 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
@@ -739,8 +788,10 @@
           <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Design Pattern
+    
   </span>
   
 
@@ -764,8 +815,10 @@
       <a href="nepali/designpattern/intro/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Intro
+    
   </span>
   
 
@@ -800,23 +853,24 @@
     
     
     
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
+  
   
   <span class="md-ellipsis">
     React Pattern
+    
   </span>
   
 
@@ -840,8 +894,10 @@
       <a href="reactPattern/functional-updated-pattern/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Functional Update Pattern
+    
   </span>
   
 
@@ -861,8 +917,10 @@
       <a href="reactPattern/when-not-to-use-functional-update/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     When not to use Functional Update
+    
   </span>
   
 
@@ -882,8 +940,10 @@
       <a href="reactPattern/functional-pattern-and-technique/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Functional Pattern & Technique
+    
   </span>
   
 
@@ -910,23 +970,24 @@
     
     
     
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
+  
   
   <span class="md-ellipsis">
     State
+    
   </span>
   
 
@@ -950,8 +1011,10 @@
       <a href="state-management/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Intro
+    
   </span>
   
 
@@ -971,10 +1034,12 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
@@ -983,8 +1048,10 @@
           <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     RTK
+    
   </span>
   
 
@@ -1008,8 +1075,10 @@
       <a href="state-management/rtk/folder-structure/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Folder Structure
+    
   </span>
   
 
@@ -1037,10 +1106,12 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
@@ -1049,8 +1120,10 @@
           <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Zustand
+    
   </span>
   
 
@@ -1074,8 +1147,10 @@
       <a href="state-management/zustand/intro/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Intro
+    
   </span>
   
 
@@ -1103,10 +1178,12 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
@@ -1115,8 +1192,10 @@
           <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Immer
+    
   </span>
   
 
@@ -1140,8 +1219,10 @@
       <a href="state-management/immer/with-and-without-immer/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     With and Without Immer
+    
   </span>
   
 
@@ -1161,8 +1242,10 @@
       <a href="state-management/immer/example/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Example
+    
   </span>
   
 
@@ -1197,23 +1280,24 @@
     
     
     
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
+  
   
   <span class="md-ellipsis">
     Next js
+    
   </span>
   
 
@@ -1237,8 +1321,10 @@
       <a href="nextjs/intro/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Intro
+    
   </span>
   
 
@@ -1288,6 +1374,75 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#8020-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      80/20 Principle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="80/20 Principle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-master-the-key-concepts-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Master the Key Concepts First
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-practical-projects-20-effort-80-of-your-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Practical Projects (20% effort, 80% of your learning)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-read-the-docs-and-follow-tutorials" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Read the Docs and Follow Tutorials
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mastering-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mastering it
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#question" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1303,12 +1458,352 @@
                   
 
 
+
   <h1>Home</h1>
 
 <h2 id="javascript-compiler">JavaScript Compiler</h2>
 <p><a href="https://www.programiz.com/javascript/online-compiler/">programiz.com/javascript/online-compiler/</a></p>
 <p><a href="https://dummyjson.com/docs/auth">Auth</a></p>
 <p><a href="https://publicapi.dev/json-placeholder-api">/json-placeholder-api</a></p>
+<hr />
+<h2 id="8020-principle">80/20 Principle</h2>
+<p>The 80/20 Principle (also known as the Pareto Principle) suggests that 80% of your results come from 20% of your efforts. When learning Next.js, you can apply this principle to focus on the most impactful concepts and skills that will give you the most value in terms of building applications effectively.</p>
+<p>Here’s how to apply the 80/20 rule to learning Next.js:</p>
+<h3 id="1-master-the-key-concepts-first">1. Master the Key Concepts First</h3>
+<p>Instead of learning every single feature of Next.js, focus on the most important features that you'll use in most projects.</p>
+<details class="tip" open="open">
+<summary>Key Areas to Focus On (the 20% that gives 80% of results):</summary>
+<ul>
+<li>
+<p><strong>Pages and Routing</strong>: Learn how Next.js handles pages and routing. It’s one of the core concepts, and understanding how dynamic routing and file-based routing work will make everything else easier.</p>
+<ul>
+<li>
+<p><strong>Static Pages</strong>: How to create static <code>pages</code> using the pages directory.</p>
+</li>
+<li>
+<p><strong>Dynamic Routing</strong>: Understand how to create dynamic routes using file naming conventions (e.g., <code>[id].js</code>).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Fetching</strong>: Understand the three main ways to fetch data:</p>
+<ul>
+<li><code>getStaticProps</code> (Static Generation)</li>
+<li><code>getServerSideProps</code> (Server-side Rendering)</li>
+<li><code>getInitialProps</code> (Older method, less commonly used now)</li>
+</ul>
+<p>Knowing when and why to use these methods is critical for performance and SEO optimization.</p>
+</li>
+<li>
+<p><strong>API Routes</strong>: Learn how to create backend functionality directly within your Next.js app using API routes. This is super useful if you want to avoid setting up a separate backend.</p>
+</li>
+<li>
+<p><strong>Static Generation vs Server-side Rendering</strong>: Understand the difference between static and dynamic rendering, and when to use each approach. This is key for optimizing performance.</p>
+</li>
+</ul>
+</details>
+<p>Use the Built-in Features</p>
+<p>Next.js comes with a lot of features out of the box. Focus on these built-in tools that save you time and effort:</p>
+<ul>
+<li>
+<p><strong>Image Optimization (<code>next/image</code>)</strong>: It automatically optimizes images for you, making apps load faster.</p>
+</li>
+<li>
+<p><strong>CSS and Sass Support</strong>: Learn how to style your app with built-in CSS support or Sass, which will let you create clean styles.</p>
+</li>
+<li>
+<p><strong>Automatic Static Optimization</strong>: Next.js automatically optimizes pages that don’t require data fetching. Understanding how this works can help you make better decisions for performance.</p>
+</li>
+</ul>
+<p>Focus on Production-Level Practices</p>
+<p>As you start to build your app, make sure you focus on practices that will help in deploying to production:</p>
+<ul>
+<li>
+<p><strong>Performance Optimization</strong>: Understand how Next.js optimizes for performance out of the box and when to use features like <code>next/script</code> to control loading behavior.</p>
+</li>
+<li>
+<p><strong>Deploying to Vercel</strong>: Vercel is the platform created by the makers of Next.js, and it’s a breeze to deploy your Next.js app there. Learn how to deploy, monitor performance, and handle environments.</p>
+</li>
+</ul>
+<h3 id="2-practical-projects-20-effort-80-of-your-learning">2. Practical Projects (20% effort, 80% of your learning)</h3>
+<ul>
+<li><strong>Build small, focused projects</strong> that make use of these concepts. For example, a blog with dynamic pages, static site generation, and a backend API to manage posts. This will cover a majority of what Next.js has to offer, in a real-world setting.</li>
+</ul>
+<h3 id="3-read-the-docs-and-follow-tutorials">3. Read the Docs and Follow Tutorials</h3>
+<ul>
+<li>
+<p><strong>Official Next.js Docs</strong>: The Next.js documentation is very clear and beginner-friendly. Focus on the key sections: routing, data fetching, and deployment.</p>
+</li>
+<li>
+<p><strong>Tutorials</strong>: Once you understand the basics, follow tutorials that dive deeper into features like authentication, state management, or integrating with other libraries and tools.</p>
+</li>
+</ul>
+<p>By focusing on the essentials, you can quickly gain enough knowledge to be highly productive with Next.js and build impressive projects while not overwhelming yourself with all the extra features you may not use often.</p>
+<hr />
+<h2 id="mastering-it">Mastering it</h2>
+<p>To truly master Next.js, you'll need to build a strong foundation in a few key areas of web development, as well as dive into some advanced concepts that are specific to Next.js. Here's a breakdown of the theory and skills to learn to become a Next.js expert:</p>
+<hr />
+<p><strong>1. Core JavaScript (ES6+)</strong></p>
+<p>Next.js is built on modern JavaScript (ES6+), so you'll need to be comfortable with the following concepts:</p>
+<ul>
+<li><strong>Variables</strong>: <code>let</code>, <code>const</code>, <code>var</code></li>
+<li><strong>Arrow functions</strong></li>
+<li><strong>Template literals</strong></li>
+<li><strong>Destructuring</strong></li>
+<li><strong>Modules</strong>: <code>import</code> and <code>export</code></li>
+<li><strong>Promises and async/await</strong></li>
+<li><strong>Higher-order functions</strong> (e.g., <code>.map()</code>, <code>.filter()</code>, <code>.reduce()</code>)</li>
+<li><strong>JavaScript classes</strong></li>
+<li><strong>ES6 modules</strong> and how they work in JavaScript.</li>
+</ul>
+<hr />
+<p><strong>2. React Basics</strong></p>
+<p>Next.js is a React framework, so a deep understanding of React is essential:</p>
+<ul>
+<li>
+<p><strong>JSX</strong>: Understanding how to write JSX (JavaScript XML).</p>
+</li>
+<li>
+<p><strong>Functional Components</strong>: Learn how to use functional components with hooks (useState, useEffect, etc.).</p>
+</li>
+<li>
+<p><strong>Props and State</strong>: Understand how data flows through your app.</p>
+</li>
+<li>
+<p><strong>Component Lifecycle</strong>: Know how the React lifecycle works, especially with hooks.</p>
+</li>
+<li>
+<p><strong>Context API</strong>: Managing global state with Context API or third-party libraries like Redux or Zustand.</p>
+</li>
+<li>
+<p><strong>Error Boundaries</strong>: Learn how to handle JavaScript errors in React apps.</p>
+</li>
+</ul>
+<hr />
+<p><strong>3. Routing and Navigation</strong></p>
+<p>One of the most important features of Next.js is its built-in routing system, which uses the <strong>file system-based routing</strong>:</p>
+<ul>
+<li>
+<p><strong>Dynamic Routing</strong>: Learn about dynamic routes and how to capture URL parameters in Next.js (e.g., <code>[id].js</code>).</p>
+</li>
+<li>
+<p><strong>Nested Routes</strong>: Organizing routes hierarchically using folder structure.</p>
+</li>
+<li>
+<p><strong>Linking</strong>: Understand the <code>Link</code> component for navigation between pages.</p>
+</li>
+<li>
+<p><strong>Catch-all Routes</strong>: Use <code>[...slug].js</code> for dynamic route handling when the path is variable.</p>
+</li>
+</ul>
+<hr />
+<p><strong>4. Data Fetching</strong></p>
+<p>Next.js provides different ways to fetch data, and understanding each is crucial for building performant apps:</p>
+<ul>
+<li>
+<p><strong>Static Generation (<code>getStaticProps</code>)</strong>: Learn how to fetch data at build time, so the pages are pre-rendered and cached.</p>
+</li>
+<li>
+<p><strong>Server-Side Rendering (<code>getServerSideProps</code>)</strong>: Understand how to fetch data on every request for dynamic content.</p>
+</li>
+<li>
+<p><strong>Incremental Static Regeneration (ISR)</strong>: Learn how Next.js allows you to statically generate content with the ability to update after deployment.</p>
+</li>
+<li>
+<p><strong>Client-Side Rendering</strong>: Understand how to fetch data client-side using <code>useEffect</code> or <code>SWR</code> (stale-while-revalidate).</p>
+</li>
+</ul>
+<hr />
+<p><strong>5. API Routes</strong></p>
+<p>Next.js allows you to create API endpoints within your app. This lets you handle backend logic directly in the same codebase.</p>
+<ul>
+<li>
+<p><strong>API Routes Basics</strong>: Learn how to create API routes inside the <code>pages/api</code> directory.</p>
+</li>
+<li>
+<p><strong>Handling HTTP Requests</strong>: Understand how to work with GET, POST, PUT, DELETE methods.</p>
+</li>
+<li>
+<p><strong>Authentication</strong>: Learn how to handle authentication in API routes (using JWT, cookies, etc.).</p>
+</li>
+<li>
+<p><strong>Database Integration</strong>: Learn how to connect to databases (e.g., MongoDB, PostgreSQL, MySQL) from your API routes.</p>
+</li>
+</ul>
+<hr />
+<p><strong>6. Styling and UI</strong></p>
+<p>Next.js supports a variety of styling methods, and knowing your options will help you build the look and feel of your application:</p>
+<ul>
+<li>
+<p><strong>CSS-in-JS</strong>: Use libraries like <code>styled-components</code> or <code>emotion</code> for scoped, component-level styling.</p>
+</li>
+<li>
+<p><strong>CSS Modules</strong>: Learn how to use scoped CSS that applies only to the component in Next.js.</p>
+</li>
+<li>
+<p><strong>Tailwind CSS</strong>: A popular utility-first CSS framework, which works well with Next.js.</p>
+</li>
+<li>
+<p><strong>Sass/SCSS</strong>: If you prefer traditional CSS, Sass support is built-in.</p>
+</li>
+<li>
+<p><strong>Global Styles</strong>: Learn how to include global styles that apply across your application.</p>
+</li>
+</ul>
+<hr />
+<p><strong>7. Optimization</strong></p>
+<p>One of the key benefits of Next.js is its focus on performance. Mastering optimization concepts will help you build fast and efficient apps:</p>
+<ul>
+<li>
+<p><strong>Automatic Static Optimization</strong>: Learn how Next.js automatically optimizes pages that don't require server-side rendering.</p>
+</li>
+<li>
+<p><strong>Image Optimization (<code>next/image</code>)</strong>: Learn how to use the <code>next/image</code> component for responsive, optimized images.</p>
+</li>
+<li>
+<p><strong>Lazy Loading</strong>: Understand how to load components and images lazily to improve initial load performance.</p>
+</li>
+<li>
+<p><strong>Code Splitting</strong>: Learn how Next.js automatically splits your code into smaller chunks.</p>
+</li>
+<li>
+<p><strong>Performance Monitoring</strong>: Learn how to use tools like Google Lighthouse and Next.js' built-in <code>next/analytics</code> to monitor and improve performance.</p>
+</li>
+</ul>
+<hr />
+<p><strong>8. Deployment and Hosting</strong></p>
+<p>Once your app is ready, you need to deploy and host it. Next.js integrates well with several hosting platforms:</p>
+<ul>
+<li>
+<p><strong>Vercel</strong>: Learn how to deploy your Next.js application seamlessly using Vercel (the creators of Next.js).</p>
+</li>
+<li>
+<p><strong>Serverless Functions</strong>: Explore how Next.js API routes work with serverless functions, which is ideal for handling backend logic without managing a server.</p>
+</li>
+<li>
+<p><strong>Custom Servers</strong>: If necessary, learn how to set up your own custom server (using Express.js, for example) to handle routing and API endpoints.</p>
+</li>
+</ul>
+<hr />
+<p><strong>9. Advanced Next.js Concepts</strong></p>
+<p>As you become more comfortable with Next.js, dive into advanced features and patterns:</p>
+<ul>
+<li>
+<p><strong>Custom Document (<code>_document.js</code>)</strong>: Learn how to customize the HTML structure of your pages.</p>
+</li>
+<li>
+<p><strong>Custom App (<code>_app.js</code>)</strong>: Understand how to customize the root component for global layouts, state management, and more.</p>
+</li>
+<li>
+<p><strong>Middleware</strong>: Learn how to use middleware to execute code before a request is completed, for use cases like authentication, logging, etc.</p>
+</li>
+<li>
+<p><strong>Internationalization (<code>i18n</code>)</strong>: Understand how to handle multiple languages in your Next.js app using built-in i18n support.</p>
+</li>
+<li>
+<p><strong>Preview Mode</strong>: Learn how to set up preview mode for content management systems (CMS) like Sanity, Contentful, or Strapi.</p>
+</li>
+</ul>
+<hr />
+<p><strong>10. Testing</strong></p>
+<p>Testing is crucial for maintaining the quality and reliability of your app:</p>
+<ul>
+<li>
+<p><strong>Unit Testing</strong>: Use <code>Jest</code> or <code>Mocha</code> to write unit tests for your components and logic.</p>
+</li>
+<li>
+<p><strong>Integration Testing</strong>: Learn how to test the interaction between your components and API.</p>
+</li>
+<li>
+<p><strong>End-to-End Testing</strong>: Use tools like Cypress or Playwright to test user flows and ensure everything works from start to finish.</p>
+</li>
+</ul>
+<hr />
+<p><strong>11. Version Control (Git)</strong></p>
+<p>Understanding version control is essential for managing code, especially as your projects grow. Learn the basics of Git, GitHub, or other Git-based platforms (GitLab, Bitbucket).</p>
+<ul>
+<li>
+<p><strong>Git Basics</strong>: Know how to commit, branch, merge, and resolve conflicts.</p>
+</li>
+<li>
+<p><strong>GitHub</strong>: Learn how to push your Next.js app to GitHub for version control and collaboration.</p>
+</li>
+</ul>
+<hr />
+<p><strong>12. Common Patterns and Architectures</strong></p>
+<p>To become a true expert, you'll need to understand the most effective ways to structure and scale your Next.js apps:</p>
+<ul>
+<li>
+<p><strong>Component Design Patterns</strong>: Learn how to break down UI components into reusable and maintainable pieces.</p>
+</li>
+<li>
+<p><strong>Folder Structure</strong>: Learn about organizing your <code>pages</code>, <code>components</code>, <code>lib</code>, <code>hooks</code>, etc., to keep your app scalable.</p>
+</li>
+<li>
+<p><strong>State Management</strong>: Learn about state management libraries like Redux, Recoil, Zustand, or useContext for larger applications.</p>
+</li>
+</ul>
+<hr />
+<p><strong>Conclusion</strong></p>
+<p>Mastering Next.js is a combination of understanding core JavaScript, React, Next.js-specific features, and best practices. Start with the basics and gradually dive deeper into more advanced topics as you gain experience. With continuous learning and practical application, you’ll become proficient in building scalable, high-performance applications with Next.js.</p>
+<hr />
+<h2 id="ssh">SSH</h2>
+<p>To use SSH (Secure Shell) for accessing remote systems, there are a few different contexts in which you might be asking about a "config file." Let me break it down for you:</p>
+<p><strong>1. SSH Client Config File (<code>~/.ssh/config</code>)</strong></p>
+<p>If you're setting up your local machine to connect to remote servers via SSH, you can use a configuration file to simplify the process, especially if you frequently connect to multiple servers. The config file allows you to define custom settings for specific hosts.</p>
+<p><strong>Location</strong>: <code>~/.ssh/config</code> (on the local machine)</p>
+<p>Here’s an example of what that file might look like:</p>
+<div class="language-bash highlight"><span class="filename">bash</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Host<span class="w"> </span>example
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span>HostName<span class="w"> </span>example.com
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span>User<span class="w"> </span>your-username
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span>Port<span class="w"> </span><span class="m">22</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span>IdentityFile<span class="w"> </span>~/.ssh/id_rsa
+</span></code></pre></div>
+<details class="tip" open="open">
+<summary>In this case:</summary>
+<ul>
+<li>
+<p><strong>Host</strong>: A shorthand you can use when running the <code>ssh</code> command (e.g., <code>ssh example</code>).</p>
+</li>
+<li>
+<p><strong>HostName</strong>: The actual domain or IP address of the remote server.</p>
+</li>
+<li>
+<p><strong>User</strong>: The SSH user you want to log in as.</p>
+</li>
+<li>
+<p><strong>Port</strong>: The port the SSH server is listening on (default is 22).</p>
+</li>
+<li>
+<p><strong>IdentityFile</strong>: Path to your private SSH key.</p>
+</li>
+</ul>
+</details>
+<p>With this config file in place, you can just type <code>ssh example</code> instead of <code>ssh your-username@example.com -p 22</code>.</p>
+<details class="question" open="open">
+<summary>Do You Need It?</summary>
+<ul>
+<li>
+<p><strong>For your local machine</strong>: It’s not mandatory, but it’s very helpful if you frequently connect to multiple SSH servers or want to use custom options (like a specific identity file, custom ports, etc.).</p>
+</li>
+<li>
+<p><strong>For the server</strong>: The config file (<code>sshd_config</code>) is necessary for setting up the SSH service on the server, but you don’t need to change it unless you have specific requirements (like enabling/disabling root login, changing the port, etc.).</p>
+</li>
+</ul>
+</details>
+<hr />
+<h2 id="question">Question</h2>
+<p>If you don't create an <code>~/.ssh/config</code> file on your local machine, you can still connect to the server directly using the ssh command. The config file is just a convenience to simplify repeated connections, but it's not required to connect.</p>
+<p><strong>Connecting to a Server Without a Config File:</strong></p>
+<p>The basic <code>ssh</code> command structure is:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ssh [user]@[hostname_or_ip]
+</span></code></pre></div>
+<hr />
+<p><strong>Why Use the <code>~/.ssh/config</code> File?</strong></p>
+<p>The config file saves you from having to type out all the details every time. For example, without the config file, each time you connect, you have to specify the username, hostname, port, and key. With the config file, you can reduce that to just:</p>
+<div class="language-bash highlight"><span class="filename">bash</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ssh<span class="w"> </span>example
+</span></code></pre></div>
+<p>But, if you're only connecting to one or two servers and don't mind typing out the full commands, you can definitely skip the config file.</p>
 
 
 
@@ -1355,10 +1850,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "content.code.copy"], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "content.code.copy"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
